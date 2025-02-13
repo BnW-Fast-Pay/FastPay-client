@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow: clip;
+}
+
 /*=========== TABLE OF CONTENTS ===========
 1. CSS Variables
 2. Utility CSS
@@ -15,6 +20,7 @@
   --brand-color: #0000FE;
   
   /*---Background Colors---*/
+  --gray-01: #F8FAFC;
 
   --background: var(--primary_background, #F9F9F9);
 
@@ -60,6 +66,14 @@
   --body-text-disabled: #A0A0A0;
 
   --body-text-disabled-reversed: #F9F9F9;
+
+  /*---Border Radius Variables---*/
+  --radius-sm: 16px;
+
+  --radius-xxl: 500px;
+
+  /*---Element Size Variables---*/
+  --input-height: 4rem;
 }
 
 /*-------------------------------------
