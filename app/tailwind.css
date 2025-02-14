@@ -74,6 +74,8 @@ body {
 
   /*---Element Size Variables---*/
   --input-height: 4rem;
+
+  --input-width-md: 40vw;
 }
 
 /*-------------------------------------

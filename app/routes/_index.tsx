@@ -1,7 +1,7 @@
-import { InputEmail, InputPassword, InputPhoneNumber } from "~/components/input";
+import { InputEmail, InputPassword, InputPhoneNumber } from "../components/input";
 import { useState } from "react";
-import AuthenticationHeaders from "~/components/authenticationHeaders";
-import TextButton from "~/components/Button";
+import AuthenticationHeaders from "../components/authenticationHeaders";
+import TextButton from "../components/Button";
 import { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
