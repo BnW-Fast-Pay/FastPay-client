@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"; 
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 
 interface LoaderProps {
     height?: [number, number, number];

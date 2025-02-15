@@ -35,7 +35,7 @@ export default function Index() {
         value={phoneNumber}
         onChange={setPhoneNumber}
       />
-      <TextButton text="Sign in" />
+      {/* <TextButton text="Sign in" /> */}
     </div>
   );
 }

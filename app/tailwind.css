@@ -4,7 +4,7 @@
 
 html,
 body {
-  overflow: clip;
+  overflow-x: clip;
 }
 
 /*=========== TABLE OF CONTENTS ===========
@@ -22,7 +22,9 @@ body {
   /*---Background Colors---*/
   --gray-01: #F8FAFC;
 
-  --background: var(--primary_background, #F9F9F9);
+  --primary_background: #FCFCFC;
+
+  --background: #F9F9F9;
 
   --stroke: #E5E7EB;
 
@@ -66,6 +68,8 @@ body {
   --body-text-disabled: #A0A0A0;
 
   --body-text-disabled-reversed: #F9F9F9;
+
+  --black: #1D1D1D;
 
   /*---Border Radius Variables---*/
   --radius-sm: 16px;

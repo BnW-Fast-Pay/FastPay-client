@@ -2,19 +2,22 @@ import { FC } from "react";
 
 interface TextButtonProps {
     text: string;
-    color?: string;
+    textColor?: string;
     onClick?: () => void;
     buttonColor?: string;
     width?: string;
     height?: string;
+    border?: string;
+    borderRadius?: string;
+    disabled?: boolean;
 }
 
-const TextButton: FC<TextButtonProps> = ({ width="w-screen", height="h-[--input-height]", text = "Click me", buttonColor="bg-[--enabled]", onClick }) => {
+const TextButton: FC<TextButtonProps> = ({ textColor="bg-[--enabled]", width, height="h-[--input-height]", border = "border", text="Click me", buttonColor, borderRadius, onClick, disabled=false }) => {
     return (
-        <div className="flex absolute items-center">
+        <div>
             <button
-                disabled={true}
-                className={`${width} md:w-[--input-width-md] ${height} ${buttonColor} hover:bg-[--hover] text-[--body-text-reversed] font-bold py-2 px-4 rounded`}
+                disabled={disabled}
+                className={`${width} ${height} ${buttonColor} ${border} ${disabled && "bg-[--disabled] cursor-not-allowed" } ${textColor} text-center ${borderRadius}`}
                 onClick={onClick}
             >
                 {text}

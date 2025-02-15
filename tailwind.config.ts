@@ -15,6 +15,8 @@ export default {
           "Segoe UI Symbol",
           "Noto Color Emoji",
         ],
+        montserrat: ['Montserrat', 'sans-serif'],
+        comfortaa: ['Comfortaa', 'cursive'],
       },
     },
   },
