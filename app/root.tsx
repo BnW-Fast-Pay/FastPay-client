@@ -1,3 +1,5 @@
+/** @format */
+
 import {
   Links,
   Meta,
@@ -21,44 +23,43 @@ export const links: LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap",
   },
   {
     rel: "icon",
     href: "/BNW-logo.svg",
-  }
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const footerColumns = [
     {
-        title: "QUICK LINKS",
-        items: [
-            { text: "AIRTIME TOPUP", href: "/airtime" },
-            { text: "DATA BUNDLE", href: "/bundle" },
-            { text: "EDUCATION", href: "/education" },
-            { text: "CABLE TV", href: "/cable" },
-            { text: "SUBSCRIPTION", href: "/subscription" },
-        ],
+      title: "QUICK LINKS",
+      items: [
+        { text: "AIRTIME TOPUP", href: "/airtime" },
+        { text: "DATA BUNDLE", href: "/bundle" },
+        { text: "EDUCATION", href: "/education" },
+        { text: "CABLE TV", href: "/cable" },
+        { text: "SUBSCRIPTION", href: "/subscription" },
+      ],
     },
     {
       title: "COMPANY",
       items: [
-          { text: "ABOUT US", href: "/about" },
-          { text: "CONTACT US", href: "/contact" },
-          { text: "PRICING", href: "/pricing" },
+        { text: "ABOUT US", href: "/about" },
+        { text: "CONTACT US", href: "/contact" },
+        { text: "PRICING", href: "/pricing" },
       ],
     },
     {
       title: "SUPPORT",
       items: [
-          { text: "WEB DEVELOPER'S API", href: "/api" },
-          { text: "PRIVACY POLICY", href: "/policy" },
-          { text: "FAQS", href: "/faqs" },
-          { text: "TERMS & CONDITIONS", href: "/terms" },
+        { text: "WEB DEVELOPER'S API", href: "/api" },
+        { text: "PRIVACY POLICY", href: "/policy" },
+        { text: "FAQS", href: "/faqs" },
+        { text: "TERMS & CONDITIONS", href: "/terms" },
       ],
     },
-    
   ];
 
   const footerSocials = [
@@ -66,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { icon: "twitter-icon.svg", href: "https://twitter.com/bnwfastpay" },
     { icon: "instagram-icon.svg", href: "https://instagram.com/bnwfastpay" },
     { icon: "youtube-icon.svg", href: "https://linkedin.com/bnwfastpay" },
-  ]
+  ];
 
   return (
     <html lang="en">
@@ -82,11 +83,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ScrollRestoration />
         <Scripts />
         <Footer
-                headerTitle="BNW FastPay!"
-                bodyTitle="BNW FastPay ensures fast, secure data and airtime purchases with scheduled recharges, rewards, and secure payments for effortless connectivity."
-                columns={footerColumns}
-                socials={footerSocials}
-            />
+          headerTitle="BNW FastPay!"
+          bodyTitle="BNW FastPay ensures fast, secure data and airtime purchases with scheduled recharges, rewards, and secure payments for effortless connectivity."
+          columns={footerColumns}
+          socials={footerSocials}
+        />
       </body>
     </html>
   );
@@ -97,5 +98,5 @@ export default function App() {
     <RecoilRoot>
       <Outlet />
     </RecoilRoot>
-  ) ;
+  );
 }

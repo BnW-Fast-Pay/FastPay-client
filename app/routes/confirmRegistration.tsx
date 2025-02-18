@@ -1,11 +1,9 @@
 /** @format */
 import AuthenticationHeaders from "../components/authenticationHeaders";
 import TextButton from "../components/Button";
-import { InputPhoneNumber } from "../components/input";
+
 import { Link } from "@remix-run/react";
 import { useEffect, useState } from "react";
-import Status from "~/components/status";
-import React from "react";
 
 const ConfirmRegistration = () => {
   const [disabled, setDisabled] = useState(true);

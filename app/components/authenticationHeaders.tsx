@@ -17,10 +17,12 @@ const AuthenticationHeaders: FC<AuthenticationHeadersProps> = ({
     <div className="flex flex-col items-center  pt-[4rem] ">
       <div className="flex flex-col items-center">
         <img src={`/${image}`} alt="FastPay Logo" className="w-12 h-12 mb-4" />
-        <h1 className=" text-center text-[30px] text-[--heading] font-bold mb-2">
+        <h1 className=" text-center text-[30px] text-[--heading] font-montserrat font-bold mb-2">
           {headerTitle}
         </h1>
-        <p className="text-[--body-text]">{bodyTitle}</p>
+        <p className="text-[--body-text] font-jakarta text-center">
+          {bodyTitle}
+        </p>
       </div>
     </div>
   );

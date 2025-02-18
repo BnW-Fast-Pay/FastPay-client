@@ -21,7 +21,7 @@ const SignIn = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center w-screen px-12 py-10 bg-[--gray-01] gap-4 text-[--body-text] justify-center space-y-4 ">
+    <div className="flex flex-col items-center w-screen px-12 py-10 bg-[--gray-01] gap-4 text-[--body-text] justify-center space-y-4 font-comfortaa ">
       {showSignIn ? (
         <>
           <AuthenticationHeaders
@@ -34,19 +34,21 @@ const SignIn = () => {
             className="flex w-[--input-width-md] h-[3rem] justify-center items-center rounded-full gap-3 border bg-white"
           >
             <img src="/Google.png" alt="" className="w-100 h-100" />
-            <TextButton
-              borderRadius="--radius-sm"
-              text="Sign In With Google"
-              textColor=""
-              border=""
-            />
+            <div className="font-jakarta">
+              <TextButton
+                borderRadius="--radius-sm"
+                text="Sign In With Google"
+                textColor="text-[--black]"
+                border=""
+              />
+            </div>
           </Link>
           <div className="flex items-center gap-3 w-[--input-width-md]">
             <hr className="flex-grow border-gray-300" />
             <span>OR</span>
             <hr className="flex-grow border-gray-300" />
           </div>
-          <div className="gap-4 flex flex-col">
+          <div className="gap-4 flex flex-col font-jakarta">
             <InputEmail
               placeholder="Email"
               onChange={() => setDisabled(false)}
@@ -56,7 +58,7 @@ const SignIn = () => {
               onChange={() => setDisabled(false)}
             />
             <div className="flex justify-between w-[--input-width-md]">
-              <div className="flex gap-2">
+              <div className="flex gap-2 text-[--black]">
                 <input type="checkbox" />
                 <p>Remember for 30 Days</p>
               </div>
@@ -78,8 +80,15 @@ const SignIn = () => {
             buttonColor="text-[--body-text-disabled-reversed]"
             onClick={() => setStatusVisible(true)}
           />
-          {statusVisible && <Status />}
-          <p>
+          {statusVisible && (
+            <Status
+              iconBg="bg-[--error] "
+              text="Oops!!! Incorrect password Try again"
+              icon="?"
+              slideColor="bg-[--error]"
+            />
+          )}
+          <p className="text-[--black]">
             Don’t have an account?{" "}
             <Link
               to="/signup"

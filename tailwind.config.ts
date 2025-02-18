@@ -1,3 +1,5 @@
+/** @format */
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -15,8 +17,9 @@ export default {
           "Segoe UI Symbol",
           "Noto Color Emoji",
         ],
-        montserrat: ['Montserrat', 'sans-serif'],
-        comfortaa: ['Comfortaa', 'cursive'],
+        montserrat: ["Montserrat", "sans-serif"],
+        comfortaa: ["Comfortaa", "cursive"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
     },
   },
