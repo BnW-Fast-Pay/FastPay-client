@@ -4,9 +4,86 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  overflow-x: clip;
 }
+
+/*=========== TABLE OF CONTENTS ===========
+1. CSS Variables
+2. Utility CSS
+==========================================*/
+
+/*-------------------------------------
+  1. CSS Variables
+--------------------------------------*/
+:root {
+  /*------Color variables------*/
+  --brand-color: #0000FE;
+  
+  /*---Background Colors---*/
+  --gray-01: #F8FAFC;
+
+  --primary_background: #FCFCFC;
+
+  --background: #F9F9F9;
+
+  --stroke: #E5E7EB;
+
+  --strove-reverse: #374151;
+
+  /*---Elements Colors---*/
+  --primary: var(--brand-color, #0000FE);
+
+  --primary-20:#B5B5FD;
+
+  --success: #0B8600;
+
+  --error: #C30000;
+
+  --white: #FFFFFF;
+
+  --black: #1D1D1D;
+
+  /*---Elements' State Colors---*/
+  --hover: #030370;
+
+  --pressed: #1919CC;
+
+  --focused: #4242FA;
+
+  --enabled: var(--brand-color, #0000FE);
+
+  --disabled: #DADADA;
+
+  --custom: #D0D5DD;
+
+  /*---Text Colors---*/
+  --heading: #1D1D1D;
+
+  --heading-reversed: #FCFCFC;
+
+  --body-text: #777777;
+
+  --body-text-reversed: #F9F9F9;
+  
+  --body-text-disabled: #A0A0A0;
+
+  --body-text-disabled-reversed: #F9F9F9;
+
+  --black: #1D1D1D;
+
+  /*---Border Radius Variables---*/
+  --radius-sm: 16px;
+
+  --radius-xxl: 500px;
+
+  /*---Element Size Variables---*/
+  --input-height: 4rem;
+
+  --input-width-md: 40vw;
+}
+
+/*-------------------------------------
+  2. Utility CSS
+--------------------------------------*/
+
+
